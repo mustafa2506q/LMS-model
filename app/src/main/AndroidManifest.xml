@@ -11,37 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LMSAppDev">
-
+        <activity
+            android:name=".AllCoursesActivity"
+            android:exported="false" />
         <!-- Register Screen -->
         <activity
             android:name=".register"
-            android:exported="false" />
-
-        <!-- Login is the FIRST screen -->
+            android:exported="false" /> <!-- Login is the FIRST screen -->
         <activity
             android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Dashboard Screen -->
+        </activity> <!-- Dashboard Screen -->
         <activity
             android:name=".dashboard"
-            android:exported="false" />
-
-        <!-- Course Detail Screen -->
+            android:exported="false" /> <!-- Course Detail Screen -->
         <activity
             android:name=".course_detail"
-            android:exported="false" />
-
-        <!-- MainActivity (not used as launcher) -->
+            android:exported="false" /> <!-- MainActivity (not used as launcher) -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
+        <activity android:name=".AllCoursesActivity" android:exported="false"/>
     </application>
 
 </manifest>

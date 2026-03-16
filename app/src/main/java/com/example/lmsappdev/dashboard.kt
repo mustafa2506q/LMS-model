@@ -46,7 +46,8 @@ class dashboard : AppCompatActivity() {
 
         // View All click
         findViewById<TextView>(R.id.tvViewAll).setOnClickListener {
-            // Will build full course list later
+            val intent = Intent(this, AllCoursesActivity::class.java)
+            startActivity(intent)
         }
 
         // Bottom Navigation

@@ -2,7 +2,6 @@ package com.example.lmsappdev
 
 import android.os.Bundle
 import android.graphics.Typeface
-import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -65,11 +64,6 @@ class course_detail : AppCompatActivity() {
         tvProjects = findViewById(R.id.tvProjects)
         tvCertification = findViewById(R.id.tvCertification)
 
-        // Back button
-        findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
-            finish()
-        }
-
         // Tab click listeners
         tabGeneral.setOnClickListener { switchTab("General") }
         tabSyllabus.setOnClickListener { switchTab("Syllabus") }
@@ -87,14 +81,34 @@ class course_detail : AppCompatActivity() {
         resetAllTabs()
 
         val fragment: Fragment = when (tabName) {
-            "General" -> { setTabSelected(tabGeneral, tvGeneral); GeneralFragment() }
-            "Syllabus" -> { setTabSelected(tabSyllabus, tvSyllabus); SyllabusFragment() }
-            "Assignments" -> { setTabSelected(tabAssignments, tvAssignments); AssignmentsFragment() }
-            "Quizzes" -> { setTabSelected(tabQuizzes, tvQuizzes); QuizzesFragment() }
-            "Activities" -> { setTabSelected(tabActivities, tvActivities); ActivitiesFragment() }
-            "Projects" -> { setTabSelected(tabProjects, tvProjects); ProjectsFragment() }
-            "Certification" -> { setTabSelected(tabCertification, tvCertification); CertificationFragment() }
-            else -> GeneralFragment()
+            "Syllabus" -> {
+                setTabSelected(tabSyllabus, tvSyllabus)
+                SyllabusFragment()
+            }
+            "Assignments" -> {
+                setTabSelected(tabAssignments, tvAssignments)
+                AssignmentsFragment()
+            }
+            "Quizzes" -> {
+                setTabSelected(tabQuizzes, tvQuizzes)
+                QuizzesFragment()
+            }
+            "Activities" -> {
+                setTabSelected(tabActivities, tvActivities)
+                ActivitiesFragment()
+            }
+            "Projects" -> {
+                setTabSelected(tabProjects, tvProjects)
+                ProjectsFragment()
+            }
+            "Certification" -> {
+                setTabSelected(tabCertification, tvCertification)
+                CertificationFragment()
+            }
+            else -> {
+                setTabSelected(tabGeneral, tvGeneral)
+                GeneralFragment()
+            }
         }
 
         supportFragmentManager.beginTransaction()

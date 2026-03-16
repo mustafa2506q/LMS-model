@@ -501,10 +501,10 @@
     <!-- BOTTOM NAVIGATION -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
+        android:layout_height="80dp"
         android:background="@color/white"
         android:elevation="16dp"
+        android:orientation="horizontal"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
 
@@ -514,23 +514,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="⊞"
-                android:textSize="22sp"
-                android:textColor="@color/red_primary"/>
+                android:textColor="@color/red_primary"
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Overview"
-                android:textSize="11sp"
                 android:textColor="@color/red_primary"
-                android:textStyle="bold"/>
+                android:textSize="11sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Calendar -->
@@ -539,22 +539,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="📅"
-                android:textSize="22sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Calendar"
-                android:textSize="11sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="11sp" />
         </LinearLayout>
 
         <!-- Projects -->
@@ -563,22 +563,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="📁"
-                android:textSize="22sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Projects"
-                android:textSize="11sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="11sp" />
         </LinearLayout>
 
         <!-- Profile -->
@@ -587,22 +587,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="👤"
-                android:textSize="22sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile"
-                android:textSize="11sp"
-                android:textColor="@color/text_gray"/>
+                android:textColor="@color/text_gray"
+                android:textSize="11sp" />
         </LinearLayout>
 
     </LinearLayout>
