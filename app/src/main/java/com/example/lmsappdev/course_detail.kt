@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.graphics.Typeface
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.lmsappdev.fragments.GeneralFragment
@@ -59,12 +60,17 @@ class course_detail : AppCompatActivity() {
         tvActivities = findViewById(R.id.tvActivities)
         tvProjects = findViewById(R.id.tvProjects)
 
+        // Back button
+        findViewById<ImageButton>(R.id.back_button).setOnClickListener {
+            finish()
+        }
+
         // Tab click listeners
         tabGeneral.setOnClickListener { switchTab("General") }
         tabSyllabus.setOnClickListener { switchTab("Syllabus") }
         tabAssignments.setOnClickListener { switchTab("Assignments") }
         tabQuizzes.setOnClickListener { switchTab("Quizzes") }
-        tabActivities.setOnClickListener { switchTab("Activities") }
+        tabActivities.setOnClickListener { switchTab("Grades") }
         tabProjects.setOnClickListener { switchTab("Projects") }
 
         // Load General by default
@@ -87,7 +93,7 @@ class course_detail : AppCompatActivity() {
                 setTabSelected(tabQuizzes, tvQuizzes)
                 QuizzesFragment()
             }
-            "Activities" -> {
+            "Grades" -> {
                 setTabSelected(tabActivities, tvActivities)
                 ActivitiesFragment()
             }

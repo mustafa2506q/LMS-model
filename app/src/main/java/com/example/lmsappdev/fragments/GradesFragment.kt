@@ -13,6 +13,6 @@ class ActivitiesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_activities, container, false)
+        return inflater.inflate(R.layout.fragment_grades, container, false)
     }
 }

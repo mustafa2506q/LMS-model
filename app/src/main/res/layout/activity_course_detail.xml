@@ -18,35 +18,57 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            android:paddingTop="24dp"
+            android:paddingTop="40dp"
             android:background="@color/white">
 
-            <!-- Course Title -->
-            <TextView
-                android:id="@+id/tvCourseTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Calculus I"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+            <!-- Back Button + Title Row -->
 
             <!-- Instructor -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back"
+                    android:src="@drawable/back_button_1" />
+
+                <TextView
+                    android:id="@+id/tvCourseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Data Base Management System"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/tvCourseInstructor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dr. Sarah Johnson • MATH 101"
+                android:text="Dr. Dinesh Patil • DBMS 301"
                 android:textSize="13sp"
                 android:textColor="@color/text_gray"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="44dp"/>
 
             <!-- Semester Tag -->
             <TextView
                 android:id="@+id/tvCourseSemester"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spring 2026"
+                android:text="Sem - 04 2026"
                 android:textSize="12sp"
                 android:textColor="@color/tag_red_text"
                 android:background="@drawable/tag_bg"
@@ -54,7 +76,8 @@
                 android:paddingEnd="10dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="44dp"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -203,7 +226,7 @@
                     android:id="@+id/tvActivities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Activities"
+                    android:text="Grades"
                     android:textSize="15sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -235,7 +258,6 @@
                     android:textColor="@color/black"/>
             </LinearLayout>
 
-            <!-- Certification Tab -->
 
         </LinearLayout>
     </ScrollView>
