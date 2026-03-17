@@ -10,11 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 class AllCoursesActivity : AppCompatActivity() {
 
     private val courses = listOf(
-        CourseItem("Calculus I", "Dr. Sarah Johnson", "MATH 101", "45 students", "Spring 2026", "#C0392B"),
-        CourseItem("Computer Science Fundamentals", "Prof. Michael Chen", "CS 101", "60 students", "Spring 2026", "#2980B9"),
-        CourseItem("English Literature", "Dr. Emily Brown", "ENG 201", "35 students", "Spring 2026", "#E67E22"),
-        CourseItem("Physics II", "Dr. Mark Lee", "PHY 201", "50 students", "Spring 2026", "#27AE60"),
-        CourseItem("Chemistry", "Dr. Aisha Khan", "CHEM 101", "40 students", "Spring 2026", "#8E44AD")
+        CourseItem("Database Management System", "Dr. Dinesh patil", "DBMS 301", "45 students", "Sem - 04", "#C0392B"),
+        CourseItem("Cryptography", "Dr. Ashish bansal", "CRYPT 401", "60 students", "Sem - 04", "#2980B9"),
+        CourseItem("Data Structures & Algorithms", "Dr. Dinesh patil", "DSA 201", "35 students", "Sem - 04", "#E67E22"),
+        CourseItem("Android App Development", "Dr. Deepak yadav", "AAD 301", "50 students", "Sem - 04", "#27AE60"),
+        CourseItem("Computer Network", "Dr. Manoj dhawan", "CN 401", "40 students", "Sem - 04", "#8E44AD")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

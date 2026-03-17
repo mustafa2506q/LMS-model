@@ -20,7 +20,7 @@
             android:id="@+id/tvCourseName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calculus I"
+            android:text="Data Base Management System"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Dr. Sarah Johnson • MATH 101"
+            android:text="Dr. Dinesh patil• DBMS - 301"
             android:textColor="@color/text_gray"
             android:textSize="13sp" />
 
@@ -46,7 +46,7 @@
             android:paddingTop="3dp"
             android:paddingEnd="10dp"
             android:paddingBottom="3dp"
-            android:text="Spring 2026"
+            android:text="Sem - 04"
             android:textColor="@color/tag_red_text"
             android:textSize="12sp" />
 

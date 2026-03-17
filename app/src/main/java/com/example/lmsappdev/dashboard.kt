@@ -23,10 +23,11 @@ class dashboard : AppCompatActivity() {
 
         // Load courses horizontally
         val courses = listOf(
-            Triple("Calculus I", "MATH 101", R.color.red_primary),
-            Triple("Computer Science", "CS 101", R.color.red_primary),
-            Triple("Physics II", "PHY 201", R.color.red_primary),
-            Triple("English Lit", "ENG 301", R.color.red_primary)
+            Triple("Database Management System", "DBMS 301", R.color.red_primary),
+            Triple("Cryptography", "CRYPT 401", R.color.red_primary),
+            Triple("Data Structures & Algorithms", "DSA 201", R.color.red_primary),
+            Triple("Android App Development", "AAD 301", R.color.red_primary),
+            Triple("Computer Network", "CN 401", R.color.red_primary)
         )
 
         val llCourses = findViewById<LinearLayout>(R.id.llCourses)

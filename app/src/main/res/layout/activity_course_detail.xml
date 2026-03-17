@@ -236,31 +236,6 @@
             </LinearLayout>
 
             <!-- Certification Tab -->
-            <LinearLayout
-                android:id="@+id/tabCertification"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:background="@drawable/tab_unselected_bg"
-                android:layout_marginBottom="8dp">
-
-                <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:src="@android:drawable/ic_menu_slideshow"
-                    android:layout_marginEnd="12dp"/>
-
-                <TextView
-                    android:id="@+id/tvCertification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Certification"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
