@@ -6,20 +6,20 @@
     android:padding="16dp"
     android:background="@color/bg_light">
 
+    <!-- Header -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Projects"
-        android:textSize="18sp"
+        android:text="Course Projects"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
+    <!-- Projects List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProjects"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No projects available yet."
-        android:textSize="14sp"
-        android:textColor="@color/text_gray"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

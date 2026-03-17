@@ -6,20 +6,20 @@
     android:padding="16dp"
     android:background="@color/bg_light">
 
+    <!-- Header -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quizzes"
-        android:textSize="18sp"
+        android:text="All Quizzes"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
+    <!-- Quiz List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuizzes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No quizzes available yet."
-        android:textSize="14sp"
-        android:textColor="@color/text_gray"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

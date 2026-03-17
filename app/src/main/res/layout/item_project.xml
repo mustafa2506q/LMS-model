@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Project Title -->
+        <TextView
+            android:id="@+id/tvProjectTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Project: UI Design"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvProjectDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build a complete Android application"
+            android:textSize="13sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Progress Label + Percentage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Progress"
+                android:textSize="13sp"
+                android:textColor="@color/text_gray"/>
+
+            <TextView
+                android:id="@+id/tvProgressPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35%"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:progress="35"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bar_red"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Team + Due Date Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Team Members -->
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="👥"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/tvTeamMembers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Prince Jaiswal, Sarah M."
+                android:textSize="12sp"
+                android:textColor="@color/text_gray"/>
+
+            <!-- Due Date -->
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="📅"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/tvProjectDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apr 15, 2026"
+                android:textSize="12sp"
+                android:textColor="@color/red_primary"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
