@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LMSAppDev">
         <activity
+            android:name=".Calender_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_Detail_Acitivity"
+            android:exported="false" />
+        <activity
             android:name=".Assignment_Detail_Activity"
             android:exported="false" />
         <activity
@@ -47,7 +53,12 @@
         <activity
             android:name=".AnnouncementDetailActivity"
             android:exported="false" />
-        <activity android:name=".AssignmentDetailActivity" android:exported="false"/>
+        <activity
+            android:name=".AssignmentDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizDetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

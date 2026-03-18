@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import android.content.Intent
 
 class QuizAdapter(
     private val quizzes: List<QuizItem>
@@ -47,7 +48,16 @@ class QuizAdapter(
                 holder.tvQuizStatus.setTextColor(Color.parseColor("#888888"))
             }
         }
-    }
 
+        // Click listener
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, QuizDetailActivity::class.java)
+            intent.putExtra("title", item.title)
+            intent.putExtra("courseName", "Android App Development")
+            intent.putExtra("questions", item.questions)
+            intent.putExtra("timeLimit", item.timeLimit)
+            holder.itemView.context.startActivity(intent)
+        }
+    }
     override fun getItemCount() = quizzes.size
 }
