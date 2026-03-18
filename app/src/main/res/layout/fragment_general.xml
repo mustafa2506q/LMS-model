@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Calculus I! Check here for general updates and announcements from your instructor."
+            android:text="Welcome! Check here for general updates and announcements from your instructor."
             android:textSize="14sp"
             android:textColor="@color/text_gray"
             android:lineSpacingExtra="4dp"
@@ -32,12 +32,14 @@
 
         <!-- Announcement Card 1 -->
         <LinearLayout
+            android:id="@+id/cardAnnouncement1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/card_bg"
             android:padding="16dp"
-            android:layout_marginBottom="12dp">
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -50,10 +52,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The midterm examination will be held on March 20, 2026, covering chapters 1–5. Please review all lecture notes and complete practice problems."
+                android:text="The midterm examination will be held on March 20, 2026, covering chapters 1–5."
                 android:textSize="13sp"
                 android:textColor="@color/text_gray"
-                android:layout_marginTop="6dp"/>
+                android:layout_marginTop="6dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,11 +70,14 @@
 
         <!-- Announcement Card 2 -->
         <LinearLayout
+            android:id="@+id/cardAnnouncement2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/card_bg"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -83,10 +90,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Due to technical issues, Assignment 3 deadline has been extended to March 17, 2026 at 11:59 PM."
+                android:text="Due to technical issues, Assignment 3 deadline has been extended to March 17, 2026."
                 android:textSize="13sp"
                 android:textColor="@color/text_gray"
-                android:layout_marginTop="6dp"/>
+                android:layout_marginTop="6dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
 
             <TextView
                 android:layout_width="match_parent"

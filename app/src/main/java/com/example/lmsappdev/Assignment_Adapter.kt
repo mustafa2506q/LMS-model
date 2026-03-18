@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class AssignmentAdapter(
-    private val assignments: List<AssignmentItem>
+    private val assignments: List<AssignmentItem>,
+    private val onClick: (AssignmentItem) -> Unit
 ) : RecyclerView.Adapter<AssignmentAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -36,7 +37,7 @@ class AssignmentAdapter(
         holder.tvStatus.text = item.status
         holder.tvGrade.text = item.grade
 
-        // Set status tag style
+        // Status style
         when (item.status) {
             "Due Soon" -> {
                 holder.tvStatus.setBackgroundResource(R.drawable.status_due_soon_bg)
@@ -50,6 +51,11 @@ class AssignmentAdapter(
                 holder.tvStatus.setBackgroundResource(R.drawable.status_submitted_bg)
                 holder.tvStatus.setTextColor(Color.parseColor("#27AE60"))
             }
+        }
+
+        // Click listener
+        holder.itemView.setOnClickListener {
+            onClick(item)
         }
     }
 

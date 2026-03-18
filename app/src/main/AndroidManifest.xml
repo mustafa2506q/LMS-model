@@ -12,9 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LMSAppDev">
         <activity
+            android:name=".Assignment_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Announcement_Detail_Activity"
+            android:exported="false" />
+        <activity
             android:name=".AllCoursesActivity"
             android:exported="false" />
-        <!-- Register Screen -->
+        <activity
+            android:name=".AllCoursesActivity"
+            android:exported="false" /> <!-- Register Screen -->
         <activity
             android:name=".register"
             android:exported="false" /> <!-- Login is the FIRST screen -->
@@ -36,7 +44,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".AllCoursesActivity" android:exported="false"/>
+        <activity
+            android:name=".AnnouncementDetailActivity"
+            android:exported="false" />
+        <activity android:name=".AssignmentDetailActivity" android:exported="false"/>
     </application>
 
 </manifest>

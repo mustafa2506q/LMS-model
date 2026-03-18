@@ -11,7 +11,7 @@ import com.example.lmsappdev.fragments.GeneralFragment
 import com.example.lmsappdev.fragments.SyllabusFragment
 import com.example.lmsappdev.fragments.AssignmentsFragment
 import com.example.lmsappdev.fragments.QuizzesFragment
-import com.example.lmsappdev.fragments.ActivitiesFragment
+import com.example.lmsappdev.fragments.GradesFragment
 import com.example.lmsappdev.fragments.ProjectsFragment
 
 class course_detail : AppCompatActivity() {
@@ -34,17 +34,14 @@ class course_detail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_detail)
 
-        // Get data passed from Dashboard
         val courseName = intent.getStringExtra("courseName") ?: "Course"
         val instructor = intent.getStringExtra("instructor") ?: ""
         val semester = intent.getStringExtra("semester") ?: ""
 
-        // Set header data
         findViewById<TextView>(R.id.tvCourseTitle).text = courseName
         findViewById<TextView>(R.id.tvCourseInstructor).text = instructor
         findViewById<TextView>(R.id.tvCourseSemester).text = semester
 
-        // Init tabs
         tabGeneral = findViewById(R.id.tabGeneral)
         tabSyllabus = findViewById(R.id.tabSyllabus)
         tabAssignments = findViewById(R.id.tabAssignments)
@@ -52,7 +49,6 @@ class course_detail : AppCompatActivity() {
         tabActivities = findViewById(R.id.tabActivities)
         tabProjects = findViewById(R.id.tabProjects)
 
-        // Init TextViews
         tvGeneral = findViewById(R.id.tvGeneral)
         tvSyllabus = findViewById(R.id.tvSyllabus)
         tvAssignments = findViewById(R.id.tvAssignments)
@@ -60,12 +56,10 @@ class course_detail : AppCompatActivity() {
         tvActivities = findViewById(R.id.tvActivities)
         tvProjects = findViewById(R.id.tvProjects)
 
-        // Back button
         findViewById<ImageButton>(R.id.back_button).setOnClickListener {
             finish()
         }
 
-        // Tab click listeners
         tabGeneral.setOnClickListener { switchTab("General") }
         tabSyllabus.setOnClickListener { switchTab("Syllabus") }
         tabAssignments.setOnClickListener { switchTab("Assignments") }
@@ -73,7 +67,6 @@ class course_detail : AppCompatActivity() {
         tabActivities.setOnClickListener { switchTab("Grades") }
         tabProjects.setOnClickListener { switchTab("Projects") }
 
-        // Load General by default
         switchTab("General")
     }
 
@@ -95,7 +88,7 @@ class course_detail : AppCompatActivity() {
             }
             "Grades" -> {
                 setTabSelected(tabActivities, tvActivities)
-                ActivitiesFragment()
+                GradesFragment()
             }
             "Projects" -> {
                 setTabSelected(tabProjects, tvProjects)

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assignment Brief"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvBriefContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete exercises 1-20 from Chapter 5. Show all your work and explain your reasoning for each problem. Submit your work as a PDF file.\n\nYou are required to:\n• Solve all problems step by step\n• Show your work clearly\n• Explain your reasoning\n• Double-check your answers\n\nSubmission format: PDF only"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:lineSpacingExtra="6dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
