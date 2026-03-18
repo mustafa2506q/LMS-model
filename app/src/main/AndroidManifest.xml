@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LMSAppDev">
         <activity
-            android:name=".Calender_Activity"
+            android:name=".Calendar_Activity"
             android:exported="false" />
         <activity
             android:name=".Quiz_Detail_Acitivity"
@@ -59,6 +59,7 @@
         <activity
             android:name=".QuizDetailActivity"
             android:exported="false" />
+        <activity android:name=".CalendarActivity" android:exported="false"/>
     </application>
 
 </manifest>

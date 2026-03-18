@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
-import android.view.LayoutInflater
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -53,7 +51,7 @@ class dashboard : AppCompatActivity() {
 
         // Bottom Navigation
         findViewById<LinearLayout>(R.id.navCalendar).setOnClickListener {
-            // Will build Calendar screen later
+            startActivity(Intent(this, CalendarActivity::class.java))
         }
         findViewById<LinearLayout>(R.id.navProjects).setOnClickListener {
             // Will build Projects screen later
